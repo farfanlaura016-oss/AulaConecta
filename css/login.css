@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef0f3;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+/* Tarjeta contenedora, simula la pantalla del celular */
+.screen {
+    width: 320px;
+    background: #ffffff;
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+    border: 8px solid #ffffff;
+}
+
+/* Zona superior con las ondas */
+.hero {
+    height: 190px;
+    background: linear-gradient(180deg, #f7f8fa 0%, #e7e9ec 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Tarjeta blanca inferior con el formulario */
+.content {
+    padding: 28px 26px 26px;
+    border-radius: 28px 28px 0 0;
+    margin-top: -28px;
+    position: relative;
+    background: #ffffff;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 12.5px;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+.subtitle span {
+    color: #2e8b57;
+    font-weight: 600;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #2e8b57;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: #f2ede1;
+    border: none;
+    border-radius: 999px;
+    padding: 13px 18px;
+    font-size: 13.5px;
+    color: #333;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #9b968a;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0 0 0 2px #2e8b57;
+}
+
+.remember-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 4px 0 20px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #333;
+    cursor: pointer;
+}
+
+.remember input[type="checkbox"] {
+    accent-color: #2e8b57;
+    width: 15px;
+    height: 15px;
+}
+
+.remember-row a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+.remember-row a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 999px;
+    background: #2e8b57;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.login-btn:hover {
+    background: #267349;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(46, 139, 87, 0.3);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+/* Selector de rol: aprendiz, instructor, funcionario */
+.roles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #f4f5f7;
+    border-radius: 999px;
+    padding: 10px 14px;
+    margin-top: 22px;
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+}
+
+.role button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: #e4e6ea;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.role.active button {
+    background: #ffffff;
+    box-shadow: 0 0 0 2px #2e8b57;
+}
+
+.role p {
+    font-size: 10.5px;
+    color: #6b7280;
+}
+
+.role.active p {
+    color: #2e8b57;
+    font-weight: 600;
+}
