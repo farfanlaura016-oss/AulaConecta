@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="progreso.css" />
+    <title>Mi Progreso</title>
+</head>
+<body>
+    <div class="screen">
 
+        <!--Menu superior-->
+        <div class="topbar">
+            <!--Icono de Opciones-->
+            <button class="icon-btn" aria-label="Menú">☰</button>
+            <h1>Mi progreso</h1>
+            <!--Icono de Notificaciones-->
+            <button class="icon-btn bell" aria-label="Notificaciones">🔔</button>
+        </div>
+
+        <!--Seccion de actividades recientes-->
+        <section class="activities">
+            <h2>Actividades Recientes</h2>
+
+            <div class="activities-grid">
+                <div class="activity">
+                    <div class="activity-card"></div>
+                    <p class="activity-title">Guía #1 de Python</p>
+                    <p class="activity-sub">Puesta por: xxxxx</p>
+                </div>
+                <div class="activity">
+                    <div class="activity-card"></div>
+                    <p class="activity-title">Guía #2 de Python</p>
+                    <p class="activity-sub">Puesta por: xxxxx</p>
+                </div>
+                <div class="activity">
+                    <div class="activity-card"></div>
+                    <p class="activity-title">Guía #3 de Python</p>
+                    <p class="activity-sub">Puesta por: xxxxx</p>
+                </div>
+                <div class="activity">
+                    <div class="activity-card"></div>
+                    <p class="activity-title">Guía #4 de Python</p>
+                    <p class="activity-sub">Puesta por: xxxxx</p>
+                </div>
+            </div>
+
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!--Seccion de Progreso de Competencias-->
+        <section class="competencies">
+            <h2>Competencias</h2>
+
+            <div class="competencies-list">
+                <div class="competency">
+                    <div class="competency-fill" style="width: 70%;"></div>
+                    <span class="competency-name">Construcción del Software</span>
+                    <span class="competency-meta"><span class="competency-arrow">⊕</span> 70%</span>
+                    <span class="competency-chevron">›</span>
+                </div>
+                <div class="competency">
+                    <div class="competency-fill" style="width: 50%;"></div>
+                    <span class="competency-name">Bases de Datos</span>
+                    <span class="competency-meta"><span class="competency-arrow">⊕</span> 50%</span>
+                    <span class="competency-chevron">›</span>
+                </div>
+            </div>
+        </section>
+
+        <!--Menu de Enlaces-->
+        <div class="bottom-nav">
+            <button class="nav-btn nav-yellow" aria-label="Tareas">✏️</button>
+            <button class="nav-btn nav-red" aria-label="Progreso">📈</button>
+            <button class="nav-btn nav-green" aria-label="Reportes">📋</button>
+        </div>
+    </div>
+</body>
+</html>
